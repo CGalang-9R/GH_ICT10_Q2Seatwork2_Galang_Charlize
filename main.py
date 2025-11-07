@@ -15,7 +15,6 @@ def gwa(e):
     Tsubjs = (5, 5, 3, 3, 5, 2)
     sum = eng + math + filo + ss + ict + sci
     average = sum / len(Lsubjs)
-    Gwaverage = round(average)
 
     grades = f'''
     Name: {firstname} {lastname}
@@ -29,4 +28,4 @@ def gwa(e):
     
     display (grades, target='final')
 
-    display(f'General Weighted Average: {average}', target='Ffinal')
+    display(f'General Weighted Average: {average:.2f}', target='Ffinal')
